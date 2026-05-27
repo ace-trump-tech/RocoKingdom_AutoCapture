@@ -1,0 +1,9 @@
+# skill_presets.yaml
+# Recommended skills for polluted sprites (if needed)
+
+default_skill_index: 0   # 0-based index of skill button
+
+polluted_sprite_skills:
+  "毒液蛙": 0
+  "污染史莱姆": 1
+  "暗影幽灵": 2
