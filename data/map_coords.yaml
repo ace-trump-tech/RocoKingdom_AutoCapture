@@ -1,0 +1,17 @@
+# map_coords.yaml
+# Screen coordinates for various map elements (1920x1080 resolution)
+
+gem_source:
+  minimap: [150, 150]        # click to open map
+  npc: [960, 540]            # gem NPC location
+  claim_button: [800, 700]   # "Claim" button
+
+annie_shop:
+  world_map: [100, 100]      # open world map
+  shop_icon: [1200, 600]     # Annie Shop icon on map
+  buy_button: [1000, 800]    # "Buy" button in shop UI
+  confirm: [1100, 900]       # confirm purchase
+
+# Default return-to-previous-map coordinate
+return_to_previous:
+  close_map: [50, 50]
