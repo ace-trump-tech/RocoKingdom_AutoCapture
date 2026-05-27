@@ -270,5 +270,5 @@ python main.py
 
 ---
 
-**项目地址**：`https://github.com/你的用户名/ShinyHunter-AutoCapture`  
+**项目地址**：`https://github.com/ace-trump-tech/RocoKingdom_AutoCapture/tree/main`  
 **最后更新**：2026-05-27 | 适配S2赛季
