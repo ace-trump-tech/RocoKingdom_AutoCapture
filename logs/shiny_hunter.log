@@ -1,0 +1,13 @@
+2026-05-27 10:15:23,123 - ShinyHunter - INFO - ShinyHunter-AutoCapture 启动 (S2赛季)
+2026-05-27 10:15:23,456 - ShinyHunter - INFO - 热键已注册：开始=f2, 暂停=f3, 退出=f4
+2026-05-27 10:15:25,001 - ShinyHunter - INFO - 用户按下开始热键，启动自动捕捉流程
+2026-05-27 10:15:25,012 - ShinyHunter - DEBUG - 进入状态: SEARCHING
+2026-05-27 10:15:25,234 - ShinyHunter - INFO - 检测到精灵: 火苗龙, 置信度0.92, 位置(450,320)
+2026-05-27 10:15:25,456 - ShinyHunter - INFO - 分类结果: 普通, 无特殊处理
+2026-05-27 10:15:25,678 - ShinyHunter - DEBUG - 进入状态: TRACKING
+2026-05-27 10:15:25,890 - ShinyHunter - INFO - 鼠标移动到目标中心 (500,350)
+2026-05-27 10:15:26,000 - ShinyHunter - INFO - 投掷咕噜球, 蓄力0.8秒
+2026-05-27 10:15:27,123 - ShinyHunter - INFO - 捕捉成功！获得 火苗龙
+2026-05-27 10:15:27,234 - ShinyHunter - INFO - 当前剩余咕噜球: 47
+2026-05-27 10:15:27,345 - ShinyHunter - DEBUG - 返回 SEARCHING
+...
