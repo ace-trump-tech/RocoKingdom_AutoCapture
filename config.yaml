@@ -1,0 +1,69 @@
+# ShinyHunter-AutoCapture 配置文件 (S2赛季)
+
+# 全局开关
+enabled: true
+
+# 日志设置
+log:
+  level: INFO          # DEBUG, INFO, WARNING, ERROR
+  file: "logs/shiny_hunter.log"
+
+# 热键配置（小写字母，支持组合键）
+hotkeys:
+  start: "f2"          # 开始/恢复捕捉
+  stop: "f3"           # 暂停捕捉
+  exit: "f4"           # 退出程序
+
+# 屏幕捕获设置
+capture:
+  region: null         # 若为null则全屏；可指定为 [left, top, width, height] 例如 [0,0,1920,1080]
+  fps: 30
+  use_dxcam: false     # 是否使用dxcam（更快，但需要安装dxcam）
+
+# 检测模型配置
+model:
+  detection: "weights/s2_all_sprites.pt"       # YOLOv8检测权重
+  classifier: "weights/shiny_classifier.pth"   # 异色/污染分类器权重
+  device: "cuda"                               # "cuda" 或 "cpu"
+  conf_threshold: 0.6                          # 检测置信度阈值
+  iou_threshold: 0.45                          # NMS的IOU阈值
+
+# 精灵优先级：数字越小优先级越高
+priority:
+  shiny: 1          # 异色精灵
+  polluted: 2       # 污染精灵
+  high_exp: 3       # 高经验精灵（可自定义列表）
+  normal: 4         # 普通精灵
+
+# 捕捉参数
+capture:
+  aim_smoothness: 0.7        # 鼠标移动平滑度 (0-1)
+  hold_time_min: 0.8         # 最短蓄力时间（秒）
+  hold_time_max: 1.5         # 最长蓄力时间（秒），根据距离自动缩放
+  max_retry: 3               # 同一只精灵最多尝试捕捉次数
+
+# 战斗参数（污染精灵）
+combat:
+  auto_skill_index: 0        # 使用第几个技能（0为第一个）
+  wait_after_combat: 2.0     # 战斗结束后等待返回捕捉界面的时间（秒）
+
+# 资源管理（咕噜球）
+resource:
+  min_balls: 10                      # 低于此数量触发补货
+  gem_route:                         # 魔力之源反馈洛克贝
+    map: "魔力之源"
+    npc_name: "洛克贝使者"
+    dialog_option: "领取反馈"
+  shop_route:                        # 安妮商店购买高级咕噜球
+    map: "安妮商店"
+    shop_npc: "安妮"
+    buy_quantity: 50                 # 每次购买数量
+    ball_type: "高级咕噜球"
+
+# 地图坐标数据文件（相对路径）
+map_coords_file: "data/map_coords.yaml"
+
+# 调试模式
+debug:
+  show_detection_window: false       # 是否显示实时检测画面（OpenCV窗口）
+  save_fail_screenshots: false       # 是否保存失败时的截图
