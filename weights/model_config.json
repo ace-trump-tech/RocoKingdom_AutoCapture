@@ -1,0 +1,16 @@
+{
+  "detection_model": {
+    "input_size": [640, 640],
+    "classes": 236,
+    "class_names_file": "data/class_names.txt",
+    "confidence_threshold": 0.6,
+    "iou_threshold": 0.45
+  },
+  "classifier_model": {
+    "input_size": [64, 64],
+    "output_classes": ["normal", "shiny", "polluted"],
+    "normalization": "imagenet"
+  },
+  "device": "cuda",
+  "version": "S2_20260527"
+}
