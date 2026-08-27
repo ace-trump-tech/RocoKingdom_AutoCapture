@@ -1,0 +1,21 @@
+# 核心依赖
+opencv-python==4.9.0.80
+pyyaml==6.0.1
+pynput==1.7.7
+mss==9.0.1
+numpy==1.24.3
+
+# 深度学习
+torch==2.1.0
+torchvision==0.16.0
+ultralytics==8.0.235   # YOLOv8
+
+# 图像处理与追踪
+scipy==1.11.4           # 卡尔曼滤波
+filterpy==1.4.5         # 额外的滤波工具
+
+# 可选加速（Windows下推荐dxcam）
+dxcam==0.0.5.3
+
+# 工具库
+tqdm==4.66.1
